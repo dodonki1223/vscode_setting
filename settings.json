@@ -1,0 +1,86 @@
+{
+    // フォント ファミリを制御します。
+    "editor.fontFamily": "MyricaM M, 'MyricaM M', MyricaM M",
+
+    // 有効な場合、ファイルを開くときに文字セット エンコードを推測します
+    "files.autoGuessEncoding": false,
+
+    // 規定の改行文字の設定（LF） ※「CRLF」にする時は「\r\n」を指定すること
+    "files.eol": "\n",
+
+    // カーソルのスタイルを制御します。指定できる値は 'block' と 'line' です
+    "editor.cursorStyle": "line",
+
+    // 概要ルーラーでカーソルを非表示にするかどうかを制御します。
+    "editor.hideCursorInOverviewRuler": true,
+
+    // エディターで左角かっこの後に自動的に右角かっこを挿入するかどうかを制御します
+    "editor.autoClosingBrackets": "always",
+    "editor.renderIndentGuides": false,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+
+    // タブを押した時、半角スペースにする
+    "editor.insertSpaces": true,
+
+    // 「php」設定
+    "[php]": {"editor.tabSize": 4 },
+
+    // 「html」設定
+    "[html]": {"editor.tabSize": 2},
+
+    // 「ruby」設定
+    "[ruby]": {"editor.tabSize": 2 },
+
+    // 「JavaScript」設定
+    "[javascript]": {"editor.tabSize": 2},
+
+    // 「Vue」設定
+    "[vue]": {"editor.tabSize": 2 },
+
+    // 「Go」設定
+    "go.formatTool": "goimports",
+    "[go]": {"files.encoding": "utf8"},
+
+    // 「Git」設定
+    "git.autofetch": true,
+
+    // Emmetの作成候補をプレビュー表示
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "window.zoomLevel": 1
+,
+    // タグが上書きされて表示されてしまう現象の回避
+    "workbench.editor.enablePreview": false,
+
+    // ユーザーが入力や貼り付け、行の移動をしたとき、エディターがインデントを自動的に調整するかどうかを制御します。言語のインデント ルールを使用できる必要があります。
+    "editor.autoIndent": false,
+    "workbench.colorTheme": "Default High Contrast",
+
+    // VSCodeのタイトル表示の変更 ※「dirty indicator（未保存の変更の有無の表示アイコン） ワークスペースフォルダに対する相対パス セパレータ（" – "） ワークスペース名」
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+    "workbench.iconTheme": "vscode-icons",
+
+    // ターミナルのカーソルを点滅させるかどうかを制御します。
+    "terminal.integrated.cursorBlinking": true,
+
+    // 端末のカーソルのスタイルを制御します。
+    "terminal.integrated.cursorStyle": "line",
+
+    // エディターが現在の行をどのように強調表示するかを制御します。考えられる値は 'none'、'gutter'、'line'、'all' です。
+    "editor.renderLineHighlight": "all",
+
+    // Windows でターミナルが使用するシェルのパス。 Windows に同梱されているシェルを使用する場合 (cmd、PowerShell、または Bash on Ubuntu) 。
+    "terminal.integrated.shell.windows": "%systemRoot%\\..\\Program Files\\Git\\bin\\bash.exe",
+    "team.showWelcomeMessage": false,
+
+    // 「Clock in status bar」の設定 ※9999/99/99 99:99の形式
+    "clock.dateFormat": "yyyy/mm/dd HH:MM",
+
+    // ファイル末尾に自動的に改行を追加する
+    "files.insertFinalNewline": true,
+
+    "workbench.settings.openDefaultKeybindings": true,
+    "editor.accessibilitySupport": "off",
+}

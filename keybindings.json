@@ -1,0 +1,68 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    // Boookmarks設定
+    { "key": "ctrl+k ctrl+k",          "command": "bookmarks.toggle" },
+    { "key": "ctrl+k ctrl+l",          "command": "bookmarks.list" },
+    { "key": "ctrl+k ctrl+shift+l",    "command": "bookmarks.listFromAllFiles" },
+    { "key": "ctrl+k ctrl+n",          "command": "bookmarks.jumpToNext" },
+    { "key": "ctrl+k ctrl+p",          "command": "bookmarks.jumpToPrevious" },
+    { "key": "ctrl+k ctrl+a",          "command": "bookmarks.clearFromAllFiles"},
+
+    // jumpy設定
+    {"key": "ctrl+j",                  "command": "extension.jumpy-word",
+                                          "when": "editorTextFocus"},
+    {"key": "Escape",                  "command": "extension.jumpy-exit",
+                                          "when": "editorTextFocus && jumpy.isJumpyMode"},
+
+    // 大文字・小文字変換用
+    { "key": "ctrl+u ",                "command": "editor.action.transformToUppercase", 
+                                          "when": "editorTextFocus" },
+    { "key": "ctrl+l",                 "command": "editor.action.transformToLowercase", 
+                                          "when": "editorTextFocus" },
+
+    // ワークスペース内のシンボルへ移動
+    { "key": "ctrl+o",                 "command": "workbench.action.showAllSymbols"},
+    { "key": "cmd+t",                  "command": "-workbench.action.showAllSymbols"},
+    // 現在開いているファイルのシンボルへ移動
+    { "key": "ctrl+shift+o",           "command": "workbench.action.gotoSymbol"},
+    { "key": "shift+cmd+o",            "command": "-workbench.action.gotoSymbol"},
+
+    // テキストエディタとターミナルのフォーカス移動
+    { "key": "ctrl+oem_1",          "command": "workbench.action.terminal.focus",
+                                          "when": "editorTextFocus"},
+    { "key": "ctrl+oem_1",          "command": "workbench.action.focusFirstEditorGroup",
+                                          "when": "terminalFocus"},
+
+    // テキストエディタとデバッグコンソールのフォーカス移動
+    {"key": "ctrl+shift+oem_1",     "command": "workbench.debug.action.focusRepl",
+                                          "when":"editorTextFocus"},
+    {"key": "ctrl+shift+oem_1",     "command": "workbench.action.focusFirstEditorGroup",
+                                          "when":"debugFocus"},
+
+    // 現在表示しているファイルのパスコピー
+    {"key": "ctrl+k p",                "command": "workbench.action.files.copyPathOfActiveFile"},
+    {
+        "key": "ctrl+k p",
+        "command": "-workbench.action.files.copyPathOfActiveFile"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+]
