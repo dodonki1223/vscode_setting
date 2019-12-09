@@ -1,6 +1,6 @@
 {
     // フォント ファミリを制御します。
-    "editor.fontFamily": "MyricaM M, 'MyricaM M', MyricaM M",
+    "editor.fontFamily": "MyricaM",
 
     // 有効な場合、ファイルを開くときに文字セット エンコードを推測します
     "files.autoGuessEncoding": false,
